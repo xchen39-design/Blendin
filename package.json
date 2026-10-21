@@ -1,0 +1,15 @@
+{
+  "name": "blendin",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": ["client"],
+  "engines": {"node": ">=22"},
+  "scripts": {
+    "setup": "node scripts/setup.mjs",
+    "dev": "node scripts/dev.mjs",
+    "build": "npm run build --workspace client",
+    "check": "npm run build --workspace client",
+    "test": "node scripts/python.mjs -m unittest discover -s server/tests -v",
+    "start": "node scripts/python.mjs -m uvicorn server.main:app --host 127.0.0.1 --port 8001"
+  }
+}
