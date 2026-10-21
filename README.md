@@ -126,12 +126,3 @@ Created by the team listed on [Devpost](https://devpost.com/software/project-5ra
 
 This repository is a restored edition of that shared hackathon project. The original artwork and project concept remain credited to the team. The original source snapshots are retained under `archive/`; they are historical reference files, not the active application. No new license is assigned to the original team code or media.
 
-## 中文使用说明
-
-1. 安装 Node.js 22+ 和 Python 3.11+。
-2. 在仓库根目录依次运行 `npm ci`、`npm run setup`、`npm run dev`。
-3. 打开 `http://127.0.0.1:5174`，选择兴趣后点击 **Mix my interests**。
-4. 默认使用本地保存的社团目录，无需 API key；勾选在线日历后会额外查询活动。
-5. 社团目录是 2025 年 9 月的备份，活动日期与报名状态请以原网站为准。
-
-若提示端口被占用，请先停止其他使用 5174 或 8001 的开发服务。若 Python 环境缺失，重新执行 `npm run setup`。原桌面文件和微信压缩包未被修改。
